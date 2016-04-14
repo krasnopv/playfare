@@ -1,0 +1,5 @@
+Menu:
+- fixed or not.
+
+Slider:
+- present or not.
