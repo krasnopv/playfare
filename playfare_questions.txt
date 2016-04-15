@@ -1,5 +1,6 @@
 Menu:
-- fixed or not.
+- fixed on scroll to top or not?
 
 Slider:
-- present or not.
+- present or not?
+- what kind of element in file "4-01" in the left on slider?
