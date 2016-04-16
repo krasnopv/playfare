@@ -35,9 +35,13 @@
       display: flex;
       color: $white;
       .icon-number {
+        font-weight: bold;
         position: absolute;
         top: 0;
         left: 20%;
+        h2 {
+          font-weight: bold;
+        }
       }
       .icon {
         width: 100%;
