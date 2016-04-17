@@ -1,7 +1,7 @@
 .menu {
   > li[role="menuitem"] {
      a {
-       color: #4d4d4d;
+       color: $menu-gray;
        font-size: 0.75rem;
      }
   }
@@ -9,7 +9,7 @@
 
 .top-bar-right {
   button {
-    margin: 0 0.25rem;
+    margin: 0.25rem;
   }
 }
 
@@ -26,6 +26,33 @@
     .orbit-container {
       .above-overlay {
         z-index: 101; /*+1 to .slide-overlay */
+      }
+      .slide1-caption {
+        position: absolute;
+        left: 0;
+        top: 25%;
+        color: $text-gray;
+        .slide-caption-first {
+          font-size: 2.32rem;
+        }
+        button {
+          width: 12.25rem;
+          font-size: 1.33rem;
+        }
+      }
+      .slide2-caption {
+        position: absolute;
+        left: 0;
+        top: 35%;
+        color: $white;
+        text-align: center;
+        .slide-caption-first {
+          font-size: 2.32rem;
+        }
+        button {
+          width: 12.25rem;
+          font-size: 1.33rem;
+        }
       }
     }
   }
@@ -61,5 +88,5 @@
 }
 
 .success-btn {
-  background: linear-gradient(90deg, #f9014d, #93278f) no-repeat;
+  background: linear-gradient(90deg, $gradient-from, $gradient-to) no-repeat;
 }
