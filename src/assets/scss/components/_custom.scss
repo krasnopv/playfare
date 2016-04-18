@@ -57,6 +57,9 @@
     }
   }
   #how-it-works {
+    /*background-image: url(/assets/img/bg-gradient.png);
+    background-repeat: repeat-y;
+    background-position: top center;*/
     .icons {
       position: relative;
       display: flex;
@@ -76,15 +79,70 @@
       }
     }
   }
+  #where-can-i-use {
+    margin-top: 20rem;
+    > div:first-child {
+      padding-bottom: 0;
+    }
+    .see-all {
+      text-align: center;
+    }
+    .partners {
+      padding: 3rem 0 9rem;
+      text-align: center;
+      .logos {
+        display: inline;
+        a {
+          line-height: 7rem;
+          img {
+            padding: 1rem 2rem;
+          }
+          &.netflix {
+            background: url(/assets/img/netflix-hover.png) center no-repeat;
+            height: 7rem !important;
+          }
+          &:hover {
+            img {
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  #call-to-action {
+    padding: 5.125rem 0 2.75rem;
+    background-image: url("/assets/img/bg-bottom.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    text-align: center;
+    .cta-body {
+      .cta-button {
+        button {
+          margin-bottom: 0.5rem;
+          padding-top: 1.25rem;
+          padding-bottom: 1.25rem;
+        }
+      }
+      .cta-description {
+        color: $white;
+        font-size: 1.33rem;
+      }
+    }
+  }
 }
 
 .section-title {
-  margin: 50px 0;
+  padding: 50px 0;
+  text-align: center;
 }
 
 .title-white {
   color: $white;
-  text-align: center;
+}
+
+.title-pink {
+  color: $text-pink;
 }
 
 .success-btn {
