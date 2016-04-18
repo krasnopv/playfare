@@ -57,7 +57,7 @@
     }
   }
   #how-it-works {
-    /*background-image: url(/assets/img/bg-gradient.png);
+    /*background-image: url(assets/img/bg-gradient.png);
     background-repeat: repeat-y;
     background-position: top center;*/
     .icons {
@@ -98,7 +98,7 @@
             padding: 1rem 2rem;
           }
           &.netflix {
-            background: url(/assets/img/netflix-hover.png) center no-repeat;
+            background: url(assets/img/netflix-hover.png) center no-repeat;
             height: 7rem !important;
           }
           &:hover {
@@ -112,7 +112,7 @@
   }
   #call-to-action {
     padding: 5.125rem 0 2.75rem;
-    background-image: url("/assets/img/bg-bottom.jpg");
+    background-image: url("assets/img/bg-bottom.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     text-align: center;
