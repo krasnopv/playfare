@@ -92,19 +92,31 @@
       text-align: center;
       .logos {
         display: inline;
-        a {
-          line-height: 7rem;
-          img {
-            padding: 1rem 2rem;
+        .logo {
+          display: inline-block;
+          a {
+            line-height: 7rem;
+            img {
+              padding: 1rem 2rem;
+              margin-top: -0.1875rem;
+            }
+            &:hover {
+              img {
+                opacity: 0;
+              }
+            }
           }
           &.netflix {
             background: url(../img/netflix-hover.png) center no-repeat;
-            height: 7rem !important;
           }
-          &:hover {
-            img {
-              opacity: 0;
-            }
+          &.hulu {
+            background: url(../img/hulu-hover.png) center no-repeat;
+          }
+          &.abc {
+            background: url(../img/abc-hover.png) center no-repeat;
+          }
+          &.hbo {
+            background: url(../img/hbo-hover.png) center no-repeat;
           }
         }
       }
@@ -116,6 +128,7 @@
     background-position: top center;
     background-repeat: no-repeat;
     text-align: center;
+    border-bottom: 2px solid $border-light;
     .cta-body {
       .cta-button {
         button {
@@ -132,8 +145,51 @@
   }
 }
 
+#footer {
+  .footer-body {
+    padding: 2.4rem 1rem;
+    background-color: $text-gray;
+    font-size: 0.75rem;
+    color: $white;
+    >div {
+      position: relative;
+      > div {
+        h6 {
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+        ul {
+          margin-left: 0;
+          li {
+            list-style: none;
+            a {
+              color: $white;
+            }
+          }
+        }
+      }
+      .logo-simple {
+        padding-left: 3.5rem;
+        img {
+          position: absolute;
+          bottom: 1rem;
+        }
+      }
+    }
+    .footer-socket {
+      font-size: 0.625rem;
+      color: $white;
+      text-align: right;;
+      a {
+        color: $white;
+      }
+    }
+  }
+}
+
 .section-title {
   padding: 50px 0;
+  /*background-color: $text-gray;*/
   text-align: center;
 }
 
