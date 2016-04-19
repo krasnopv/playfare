@@ -66,7 +66,7 @@ header {
     background-position: top center;*/
     .icons {
       position: relative;
-      display: flex;
+      /*display: flex;*/
       color: $white;
       .icon-number {
         font-weight: bold;
@@ -80,6 +80,10 @@ header {
       .icon {
         width: 100%;
         text-align: center;
+      }
+      .icon-caption {
+        text-align: center;
+        margin-top: 1.5rem;
       }
     }
   }
@@ -161,6 +165,7 @@ header {
         h6 {
           font-weight: bold;
           text-transform: uppercase;
+          font-size: 0.75rem;
         }
         ul {
           margin-left: 0;
@@ -292,6 +297,7 @@ header {
     }
   }
 }
+
 .signup-body {
   /*background: $white-gray;*/
   padding: 5.5rem 0;
@@ -306,7 +312,7 @@ header {
  .signup-form {
     text-align: center;
     background: $white;
-    left: 50%;
+    /*left: 50%;*/
     /*position: absolute;*/
     /*margin: 7.2rem 0 0 -12.5% !important;*/
     padding: 3.2rem;
@@ -382,6 +388,124 @@ header {
         font-size: 0.75rem;
         text-decoration: underline;
       }
+    }
+  }
+}
+
+.netflix-main {
+background-image: url("../img/bg-netflix.jpg");
+background-color: rgba(0,0,0,0.6);
+background-blend-mode: multiply;
+height: 100%;
+  .netflix-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15rem;
+    margin-left: -20rem;
+    background: $white;
+    height: 30rem;
+    width: 40rem;
+    .netflix-img {
+      background: $white-gray;
+      padding-top: 8.375rem;
+      text-align: center;
+      height: 29.3125rem;
+      img {
+        height: 12.25rem;
+      }
+    }
+    .netflix-form {
+      text-align: center;
+      background: $white;
+      /*left: 50%;*/
+      /*position: absolute;*/
+      /*margin: 7.2rem 0 0 -12.5% !important;*/
+      padding: 4.25rem 4.25rem 3.625rem;
+      border-radius: 0.5rem;
+      .form-title {
+        margin-bottom: 2rem;
+        color: $menu-gray;
+        h6 {
+          font-size: 0.875rem;
+        }
+      }
+      .btn-facebook {
+        background: url("../img/btn-facebook-icon.png") $facebook-login no-repeat;
+        background-position: 0.5rem center;
+      }
+      .btn-google {
+        background: url("../img/btn-google-icon.png") $google-login no-repeat;
+        background-position: 0.5rem center;
+      }
+      hr {
+        padding: 0 15px;
+        border-bottom: 1px solid #f5f5f5;
+        text-align: center;
+      }
+      hr:after {
+        content: "Or";
+        color: #acacac;
+        display: inline-block;
+        position: relative;
+        top: -0.9rem;
+        font-size: 0.75rem;
+        padding: 0 11px;
+        background: $white;
+        line-height: 20px;
+      }
+      > div {
+        &.input-firstname {
+          padding: 0 0.125rem 0 0;
+        }
+        &.input-lastname {
+          padding: 0 0 0 0.125rem;
+        }
+        input[type='text'], input[type='email'], input[type='password'] {
+          margin: 0 0 $global-margin/4;
+          font-size: 0.75rem;
+          padding: 0.75rem 1.125rem;
+          color: $text-gray;
+          &.incorrect {
+            border-color: $red;
+            color: $red;
+          }
+        }
+      }
+      .incorrect-text {
+        color: $red;
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+      }
+      > div {
+        .checkbox-remember {
+          margin: 1rem auto 1.25rem;
+        }
+        .label-remember {
+          font-size: 0.75rem !important;
+          color: $menu-gray;
+        }
+      }
+      .success-btn {
+        background: linear-gradient(90deg, $gradient-from, $gradient-to) no-repeat;
+        padding: 0.625rem 0;
+        margin-top: 0.5rem;
+        border-radius: 0.5rem;
+      }
+      .signup-link, .forgot-link {
+        padding: 0;
+        margin-top: 0.5rem;
+        a {
+          font-size: 0.75rem;
+          text-decoration: underline;
+          color: $menu-gray;
+        }
+      }
+    }
+    .netflix-close {
+      position: absolute;
+      top: 0.75rem;
+      right: 1rem;
     }
   }
 }
