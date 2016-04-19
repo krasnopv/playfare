@@ -252,7 +252,20 @@
       input[type='text'] {
         margin: 0 0 $global-margin/4;
         font-size: 0.75rem;
+        &.login-incorrect {
+          border-color: $red;
+          color: $red;
+        }
+        &.password-incorrect {
+          border-color: $red;
+          color: $red;
+        }
       }
+    }
+    .incorrect-text {
+      color: $red;
+      font-size: 0.75rem;
+      margin-bottom: 1rem;
     }
     > div {
       .checkbox-remember {
