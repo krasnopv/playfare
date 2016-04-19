@@ -55,6 +55,7 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #ec5840,
 );
+$white-gray: #f2f2f2;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
@@ -69,6 +70,8 @@ $body-background: $white;
 $body-font-color: $black;
 $text-pink: #de005d;
 $border-light: #fafbfc;
+$facebook-login: #5a739d;
+$google-login: #4285f4;
 $body-font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
@@ -88,9 +91,9 @@ $print-transparent-backgrounds: true;
 $breakpoints: (
   small: 0,
   medium: 768px,
-  large: 1024px,
-  xlarge: 1200px,
-  xxlarge: 1440px,
+  large: 1280px,
+  xlarge: 1440px,
+  xxlarge: 2560px,
 );
 $breakpoint-classes: (small medium large xlarge xxlarge);
 
@@ -241,7 +244,7 @@ $breadcrumbs-item-slash: true;
 // ----------
 
 $button-padding: 0.5em 1em;
-$button-margin: 0 0 $global-margin 0;
+$button-margin: 0 0 $global-margin/4 0;
 $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
