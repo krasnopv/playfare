@@ -1,5 +1,6 @@
 .my-zone {
-	padding-top: 3.75rem;
+	padding: 3.75rem 0 5rem;
+
 	.profile-main {
 		max-width: 16rem;
 		.profile-head {
@@ -96,6 +97,24 @@
 			.payment-methods {
 			}
 			.billing-adress {
+				.billing-form {
+					padding: 1.25rem;
+					.form-title {
+						margin-bottom: 1rem;
+						h5 {
+							font-size: 0.75rem;
+							color: $dark-gray;
+							text-align: left;
+							text-transform: uppercase;
+							font-weight: bold;
+						}
+					}
+					.input-full-name {
+						input[type='text'] {
+							margin-bottom: 1rem;
+						}
+					}
+				}
 			}
 		}
 		.zone-limit {
