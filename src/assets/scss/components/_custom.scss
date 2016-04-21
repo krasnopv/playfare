@@ -1,446 +1,337 @@
 .wrapper {
   height: 100%;
 
-.header {
-  background: rgba(255,255,255,0.75);
-  left: 50%  !important;
-  margin-left: -40rem !important;
-  border-bottom: 1px solid $light-gray !important;
-  z-index: 9999;
-  .menu {
-    > li[role="menuitem"] {
-       a {
-         color: $menu-gray;
-         font-size: 0.75rem;
-       }
+  .header {
+    background: rgba(255,255,255,0.9);
+    left: 50%  !important;
+    margin-left: -40rem !important;
+    border-bottom: 1px solid $light-gray !important;
+    z-index: 9999;
+    .menu {
+      > li[role="menuitem"] {
+         a {
+           color: $menu-gray;
+           font-size: 0.75rem;
+         }
+      }
     }
   }
-}
 
-.top-bar-right {
-  .button {
-    margin: 0.25rem;
-    padding: 0.5rem $global-margin;
+  .top-bar-right {
+    .button {
+      margin: 0.25rem;
+      padding: 0.5rem $global-margin;
+    }
   }
-}
 
-#main {
-  background: url(../img/home-main-bg.png) no-repeat top center;
-  margin-top: 50px;
-  .slide-overlay {
-    position: absolute;
-    top: 52px;
-    left: 50%;
-    margin-left: -$global-width/2;
-    z-index: 10;
-  }
-  .orbit {
-    .orbit-container {
-      .above-overlay {
-        z-index: 11; /*+1 to .slide-overlay */
-      }
-      .slide1-caption {
-        position: absolute;
-        left: 0;
-        top: 25%;
-        color: $text-gray;
-        .slide-caption-first {
-          font-size: 2.32rem;
+  #main {
+    background: url(../img/home-main-bg.png) no-repeat top center;
+    margin-top: 55px;
+    .slide-overlay {
+      position: absolute;
+      top: 52px;
+      left: 50%;
+      margin-left: -$global-width/2;
+      z-index: 10;
+    }
+    .orbit {
+      .orbit-container {
+        .above-overlay {
+          z-index: 11; /*+1 to .slide-overlay */
         }
-        button {
-          width: 12.25rem;
-          font-size: 1.33rem;
+        .slide1-caption {
+          position: absolute;
+          left: 0;
+          top: 25%;
+          color: $text-gray;
+          .slide-caption-first {
+            font-size: 2.32rem;
+          }
+          button {
+            width: 12.25rem;
+            font-size: 1.33rem;
+          }
+        }
+        .slide2-caption {
+          position: absolute;
+          left: 0;
+          top: 35%;
+          color: $white;
+          text-align: center;
+          .slide-caption-first {
+            font-size: 2.32rem;
+          }
+          button {
+            width: 12.25rem;
+            font-size: 1.33rem;
+          }
         }
       }
-      .slide2-caption {
-        position: absolute;
-        left: 0;
-        top: 35%;
+    }
+    #how-it-works {
+      .content {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .icons {
+        position: relative;
+        /*display: flex;*/
         color: $white;
-        text-align: center;
-        .slide-caption-first {
-          font-size: 2.32rem;
+        .icon-number {
+          font-weight: bold;
+          position: absolute;
+          top: 0;
+          left: 20%;
+          h2 {
+            font-weight: bold;
+          }
         }
-        button {
-          width: 12.25rem;
+        .icon {
+          width: 100%;
+          text-align: center;
+        }
+        .icon-caption {
+          text-align: center;
+          margin-top: 1.5rem;
+        }
+      }
+    }
+    #where-can-i-use {
+      margin-top: 29rem;
+      .content {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      > div:first-child {
+        padding-bottom: 0;
+      }
+      .see-all {
+        text-align: center;
+      }
+      .partners {
+        padding: 3rem 0 9rem;
+        text-align: center;
+        .logos {
+          display: inline;
+          .logo {
+            display: inline-block;
+            a {
+              line-height: 7rem;
+              img {
+                padding: $global-margin $global-margin*2;
+                margin-top: -0.1875rem;
+              }
+              &:hover {
+                img {
+                  opacity: 0;
+                }
+              }
+            }
+            &.netflix {
+              background: url(../img/netflix-hover.png) center no-repeat;
+            }
+            &.hulu {
+              background: url(../img/hulu-hover.png) center no-repeat;
+            }
+            &.abc {
+              background: url(../img/abc-hover.png) center no-repeat;
+            }
+            &.hbo {
+              background: url(../img/hbo-hover.png) center no-repeat;
+            }
+          }
+        }
+      }
+    }
+    #call-to-action {
+      padding: 5.125rem 0 2.75rem;
+      background-image: url("../img/bg-bottom.jpg");
+      background-position: top center;
+      background-repeat: no-repeat;
+      text-align: center;
+      border-bottom: 2px solid $border-light;
+      .cta-body {
+        .cta-button {
+          button {
+            margin-bottom: 0.5rem;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+          }
+        }
+        .cta-description {
+          color: $white;
           font-size: 1.33rem;
         }
       }
     }
   }
-  #how-it-works {
-    /*background-image: url(../img/bg-gradient.png);
-    background-repeat: repeat-y;
-    background-position: top center;*/
-    .icons {
-      position: relative;
-      /*display: flex;*/
+
+  #footer {
+    .footer-body {
+      padding: 2.4rem $global-margin;
+      background-color: $text-gray;
+      font-size: 0.75rem;
       color: $white;
-      .icon-number {
-        font-weight: bold;
-        position: absolute;
-        top: 0;
-        left: 20%;
-        h2 {
-          font-weight: bold;
-        }
-      }
-      .icon {
-        width: 100%;
-        text-align: center;
-      }
-      .icon-caption {
-        text-align: center;
-        margin-top: 1.5rem;
-      }
-    }
-  }
-  #where-can-i-use {
-    margin-top: 13rem;
-    > div:first-child {
-      padding-bottom: 0;
-    }
-    .see-all {
-      text-align: center;
-    }
-    .partners {
-      padding: 3rem 0 9rem;
-      text-align: center;
-      .logos {
-        display: inline;
-        .logo {
-          display: inline-block;
-          a {
-            line-height: 7rem;
-            img {
-              padding: $global-margin $global-margin*2;
-              margin-top: -0.1875rem;
-            }
-            &:hover {
-              img {
-                opacity: 0;
+      >div {
+        position: relative;
+        > div {
+          h6 {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+          }
+          ul {
+            margin-left: 0;
+            li {
+              list-style: none;
+              a {
+                color: $white;
               }
             }
           }
-          &.netflix {
-            background: url(../img/netflix-hover.png) center no-repeat;
-          }
-          &.hulu {
-            background: url(../img/hulu-hover.png) center no-repeat;
-          }
-          &.abc {
-            background: url(../img/abc-hover.png) center no-repeat;
-          }
-          &.hbo {
-            background: url(../img/hbo-hover.png) center no-repeat;
+        }
+        .logo-simple {
+          padding-left: 3.5rem;
+          img {
+            position: absolute;
+            bottom: $global-margin;
           }
         }
-      }
-    }
-  }
-  #call-to-action {
-    padding: 5.125rem 0 2.75rem;
-    background-image: url("../img/bg-bottom.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
-    text-align: center;
-    border-bottom: 2px solid $border-light;
-    .cta-body {
-      .cta-button {
-        button {
-          margin-bottom: 0.5rem;
-          padding-top: 1.25rem;
-          padding-bottom: 1.25rem;
+        .logo-login-simple {
+          float: right;
         }
       }
-      .cta-description {
+      .footer-socket {
+        font-size: 0.625rem;
         color: $white;
-        font-size: 1.33rem;
+        text-align: right;;
+        a {
+          color: $white;
+        }
       }
     }
+    .footer-login-body {
+      background: url("../img/bg-footer-login.jpg");
+      height: 14.2rem;
+      padding-top: 13.8%;
+    }
   }
-}
 
-#footer {
-  .footer-body {
-    padding: 2.4rem $global-margin;
-    background-color: $text-gray;
-    font-size: 0.75rem;
+  .section-title {
+    padding: 50px 0;
+    /*background-color: $text-gray;*/
+    text-align: center;
+  }
+
+  .title-white {
     color: $white;
-    >div {
-      position: relative;
+  }
+
+  .title-pink {
+    color: $text-pink;
+  }
+
+  .login-body {
+    background: $white-gray;
+    height: 34.5rem;
+    .login-form {
+      text-align: center;
+      background: $white;
+      left: 50%;
+      position: absolute;
+      margin: 7.2rem 0 0 -12.5% !important;
+      padding: 3.2rem;
+      border-radius: 0.5rem;
+      .form-title {
+        margin-bottom: 2.5rem;
+        color: $menu-gray;
+      }
+      .btn-facebook {
+        background: url("../img/btn-facebook-icon.png") $facebook-login no-repeat;
+        background-position: 0.5rem center;
+      }
+      .btn-google {
+        background: url("../img/btn-google-icon.png") $google-login no-repeat;
+        background-position: 0.5rem center;
+      }
+      hr {
+        padding: 0 15px;
+        border-bottom: 1px solid #f5f5f5;
+        text-align: center;
+      }
+      hr:after {
+        content: "Or";
+        color: #acacac;
+        display: inline-block;
+        position: relative;
+        top: -0.9rem;
+        font-size: 0.75rem;
+        padding: 0 11px;
+        background: $white;
+        line-height: 20px;
+      }
       > div {
-        h6 {
-          font-weight: bold;
-          text-transform: uppercase;
+        input[type='email'], input[type='password'] {
+          margin: 0 0 $global-margin/4;
           font-size: 0.75rem;
-        }
-        ul {
-          margin-left: 0;
-          li {
-            list-style: none;
-            a {
-              color: $white;
-            }
+          color: $text-gray;
+          &.incorrect {
+            border-color: $red;
+            color: $red;
           }
         }
       }
-      .logo-simple {
-        padding-left: 3.5rem;
-        img {
-          position: absolute;
-          bottom: $global-margin;
+      .incorrect-text {
+        color: $red;
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+      }
+      > div {
+        .checkbox-remember {
+          margin: 1rem auto 1.25rem;
+        }
+        .label-remember {
+          font-size: 0.75rem !important;
+          color: $menu-gray;
         }
       }
-      .logo-login-simple {
-        float: right;
+      .success-btn {
+        background: linear-gradient(90deg, $gradient-from, $gradient-to) no-repeat;
+        padding: 0.625rem 0;
+        border-radius: 0.5rem;
       }
-    }
-    .footer-socket {
-      font-size: 0.625rem;
-      color: $white;
-      text-align: right;;
-      a {
-        color: $white;
-      }
-    }
-  }
-  .footer-login-body {
-    background: url("../img/bg-footer-login.jpg");
-    height: 14.2rem;
-    padding-top: 13.8%;
-  }
-}
-
-.section-title {
-  padding: 50px 0;
-  /*background-color: $text-gray;*/
-  text-align: center;
-}
-
-.title-white {
-  color: $white;
-}
-
-.title-pink {
-  color: $text-pink;
-}
-
-.login-body {
-  background: $white-gray;
-  height: 34.5rem;
-  .login-form {
-    text-align: center;
-    background: $white;
-    left: 50%;
-    position: absolute;
-    margin: 7.2rem 0 0 -12.5% !important;
-    padding: 3.2rem;
-    border-radius: 0.5rem;
-    .form-title {
-      margin-bottom: 2.5rem;
-      color: $menu-gray;
-    }
-    .btn-facebook {
-      background: url("../img/btn-facebook-icon.png") $facebook-login no-repeat;
-      background-position: 0.5rem center;
-    }
-    .btn-google {
-      background: url("../img/btn-google-icon.png") $google-login no-repeat;
-      background-position: 0.5rem center;
-    }
-    hr {
-      padding: 0 15px;
-      border-bottom: 1px solid #f5f5f5;
-      text-align: center;
-    }
-    hr:after {
-      content: "Or";
-      color: #acacac;
-      display: inline-block;
-      position: relative;
-      top: -0.9rem;
-      font-size: 0.75rem;
-      padding: 0 11px;
-      background: $white;
-      line-height: 20px;
-    }
-    > div {
-      input[type='email'], input[type='password'] {
-        margin: 0 0 $global-margin/4;
-        font-size: 0.75rem;
-        color: $text-gray;
-        &.incorrect {
-          border-color: $red;
-          color: $red;
+      .signup-link, .forgot-link {
+        padding: 0;
+        margin-top: 0.5rem;
+        a {
+          font-size: 0.75rem;
+          text-decoration: underline;
         }
       }
     }
-    .incorrect-text {
-      color: $red;
-      font-size: 0.75rem;
-      margin-bottom: 1rem;
-    }
-    > div {
-      .checkbox-remember {
-        margin: 1rem auto 1.25rem;
-      }
-      .label-remember {
-        font-size: 0.75rem !important;
-        color: $menu-gray;
-      }
-    }
-    .success-btn {
-      background: linear-gradient(90deg, $gradient-from, $gradient-to) no-repeat;
-      padding: 0.625rem 0;
-      border-radius: 0.5rem;
-    }
-    .signup-link, .forgot-link {
-      padding: 0;
-      margin-top: 0.5rem;
-      a {
-        font-size: 0.75rem;
-        text-decoration: underline;
-      }
-    }
   }
-}
 
-.signup-body {
-  /*background: $white-gray;*/
-  padding: 5.5rem 0;
-  > div:first-child {
-    padding: 5.75rem 0 5.125rem;
-    border-right: 2px solid $light-gray;
-  }
-  > div:nth-child(2) {
-    padding-top: 1.5rem;
-  }
- .signup-form {
-    text-align: center;
-    background: $white;
-    /*left: 50%;*/
-    /*position: absolute;*/
-    /*margin: 7.2rem 0 0 -12.5% !important;*/
-    padding: 0 3.2rem 3.2rem;
-    border-radius: 0.5rem;
-    .form-title {
-      margin-bottom: 2.5rem;
-      color: $menu-gray;
+  .signup-body {
+    /*background: $white-gray;*/
+    padding: 5.5rem 0;
+    > div:first-child {
+      padding: 5.75rem 0 5.125rem;
+      border-right: 2px solid $light-gray;
     }
-    .btn-facebook {
-      background: url("../img/btn-facebook-icon.png") $facebook-login no-repeat;
-      background-position: 0.5rem center;
+    > div:nth-child(2) {
+      padding-top: 1.5rem;
     }
-    .btn-google {
-      background: url("../img/btn-google-icon.png") $google-login no-repeat;
-      background-position: 0.5rem center;
-    }
-    hr {
-      padding: 0 15px;
-      border-bottom: 1px solid #f5f5f5;
-      text-align: center;
-    }
-    hr:after {
-      content: "Or";
-      color: #acacac;
-      display: inline-block;
-      position: relative;
-      top: -0.9rem;
-      font-size: 0.75rem;
-      padding: 0 11px;
-      background: $white;
-      line-height: 20px;
-    }
-    > div {
-      &.input-firstname {
-        padding: 0 0.125rem 0 0;
-      }
-      &.input-lastname {
-        padding: 0 0 0 0.125rem;
-      }
-      input[type='text'], input[type='email'], input[type='password'] {
-        margin: 0 0 $global-margin/4;
-        font-size: 0.75rem;
-        color: $text-gray;
-        &.incorrect {
-          border-color: $red;
-          color: $red;
-        }
-      }
-    }
-    .incorrect-text {
-      color: $red;
-      font-size: 0.75rem;
-      margin-top: 1rem;
-    }
-    > div {
-      .checkbox-remember {
-        margin: 1rem auto 1.25rem;
-      }
-      .label-remember {
-        font-size: 0.75rem !important;
-        color: $menu-gray;
-      }
-    }
-    .success-btn {
-      background: linear-gradient(90deg, $gradient-from, $gradient-to) no-repeat;
-      padding: 0.625rem 0;
-      border-radius: 0.5rem;
-      margin-top: 0.25rem;
-    }
-    .signup-link, .forgot-link {
-      padding: 0;
-      margin-top: 2.75rem;
-      a {
-        font-size: 0.75rem;
-        text-decoration: underline;
-      }
-      &.incorrect {
-        margin-top: 1rem;
-      }
-    }
-  }
-}
-
-.netflix-main {
-background-image: url("../img/bg-netflix.jpg");
-background-color: rgba(0,0,0,0.6);
-background-blend-mode: multiply;
-height: 100%;
-  .netflix-body {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -15rem;
-    margin-left: -20rem !important;
-    background: $white;
-    height: 30rem;
-    width: 40rem;
-    .netflix-img {
-      background: $white-gray;
-      padding-top: 8.375rem;
-      text-align: center;
-      height: 29.3125rem;
-      img {
-        height: 12.25rem;
-      }
-    }
-    .netflix-form {
+   .signup-form {
       text-align: center;
       background: $white;
       /*left: 50%;*/
       /*position: absolute;*/
       /*margin: 7.2rem 0 0 -12.5% !important;*/
-      padding: 4.25rem 4.25rem 3.625rem;
+      padding: 0 3.2rem 3.2rem;
       border-radius: 0.5rem;
       .form-title {
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
         color: $menu-gray;
-        h6 {
-          font-size: 0.875rem;
-          font-weight: bold;
-        }
       }
       .btn-facebook {
         background: url("../img/btn-facebook-icon.png") $facebook-login no-repeat;
@@ -476,7 +367,233 @@ height: 100%;
         input[type='text'], input[type='email'], input[type='password'] {
           margin: 0 0 $global-margin/4;
           font-size: 0.75rem;
-          padding: 0.75rem 1.125rem;
+          color: $text-gray;
+          &.incorrect {
+            border-color: $red;
+            color: $red;
+          }
+        }
+      }
+      .incorrect-text {
+        color: $red;
+        font-size: 0.75rem;
+        margin-top: 1rem;
+      }
+      > div {
+        .checkbox-remember {
+          margin: 1rem auto 1.25rem;
+        }
+        .label-remember {
+          font-size: 0.75rem !important;
+          color: $menu-gray;
+        }
+      }
+      .success-btn {
+        background: linear-gradient(90deg, $gradient-from, $gradient-to) no-repeat;
+        padding: 0.625rem 0;
+        border-radius: 0.5rem;
+        margin-top: 0.25rem;
+      }
+      .signup-link, .forgot-link {
+        padding: 0;
+        margin-top: 2.75rem;
+        a {
+          font-size: 0.75rem;
+          text-decoration: underline;
+        }
+        &.incorrect {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+  .netflix-main {
+  background-image: url("../img/bg-netflix.jpg");
+  background-color: rgba(0,0,0,0.6);
+  background-blend-mode: multiply;
+  height: 100%;
+    .netflix-body {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -15rem;
+      margin-left: -20rem !important;
+      background: $white;
+      height: 30rem;
+      width: 40rem;
+      .netflix-img {
+        background: $white-gray;
+        padding-top: 8.375rem;
+        text-align: center;
+        height: 29.3125rem;
+        img {
+          height: 12.25rem;
+        }
+      }
+      .netflix-form {
+        text-align: center;
+        background: $white;
+        /*left: 50%;*/
+        /*position: absolute;*/
+        /*margin: 7.2rem 0 0 -12.5% !important;*/
+        padding: 4.25rem 4.25rem 3.625rem;
+        border-radius: 0.5rem;
+        .form-title {
+          margin-bottom: 2rem;
+          color: $menu-gray;
+          h6 {
+            font-size: 0.875rem;
+            font-weight: bold;
+          }
+        }
+        .btn-facebook {
+          background: url("../img/btn-facebook-icon.png") $facebook-login no-repeat;
+          background-position: 0.5rem center;
+        }
+        .btn-google {
+          background: url("../img/btn-google-icon.png") $google-login no-repeat;
+          background-position: 0.5rem center;
+        }
+        hr {
+          padding: 0 15px;
+          border-bottom: 1px solid #f5f5f5;
+          text-align: center;
+        }
+        hr:after {
+          content: "Or";
+          color: #acacac;
+          display: inline-block;
+          position: relative;
+          top: -0.9rem;
+          font-size: 0.75rem;
+          padding: 0 11px;
+          background: $white;
+          line-height: 20px;
+        }
+        > div {
+          &.input-firstname {
+            padding: 0 0.125rem 0 0;
+          }
+          &.input-lastname {
+            padding: 0 0 0 0.125rem;
+          }
+          input[type='text'], input[type='email'], input[type='password'] {
+            margin: 0 0 $global-margin/4;
+            font-size: 0.75rem;
+            padding: 0.75rem 1.125rem;
+            color: $text-gray;
+            &.incorrect {
+              border-color: $red;
+              color: $red;
+            }
+          }
+        }
+        .incorrect-text {
+          color: $red;
+          font-size: 0.75rem;
+          margin-bottom: 1rem;
+        }
+        > div {
+          .checkbox-remember {
+            margin: 1rem auto 1.25rem;
+          }
+          .label-remember {
+            font-size: 0.75rem !important;
+            color: $menu-gray;
+          }
+        }
+        .netflix-success-btn {
+          position: relative;
+          img {
+            height: 1.25rem;
+            position: absolute;
+            left: 0.75rem;
+            top: 1rem;
+          }
+          .success-btn {
+            background: linear-gradient(90deg, $gradient-from, $gradient-to) no-repeat;
+            padding: 0.625rem 0;
+            margin-top: 0.5rem;
+            border-radius: 0.5rem;
+          }
+        }
+        .signup-link, .forgot-link {
+          padding: 0;
+          margin-top: 0.5rem;
+          a {
+            font-size: 0.75rem;
+            text-decoration: underline;
+            color: $menu-gray;
+          }
+        }
+      }
+      .netflix-close {
+        position: absolute;
+        top: 0.75rem;
+        right: 1rem;
+      }
+    }
+  }
+
+  .forgot-body {
+    background: $white-gray;
+    height: 34.5rem;
+    .forgot-form {
+      text-align: center;
+      background: $white;
+      left: 50%;
+      position: absolute;
+      margin: 7.2rem 0 0 -12.5% !important;
+      padding: 8.25rem 3.2rem 12.5rem;
+      border-radius: 0.5rem;
+      .back-link {
+        position: absolute;
+        top: 2rem;
+        left: 2.5rem;
+        font-size: 0.75rem;
+      }
+      .form-title {
+        /*margin-bottom: 2.5rem;*/
+        color: $menu-gray;
+        font-size: 1.35rem;
+      }
+      .forgot-text {
+        padding: 1.375rem 0;
+        line-height: 1rem;
+        span {
+          font-size: 0.75rem;
+          color: $menu-gray;
+        }
+      }
+      .btn-facebook {
+        background: url("../img/btn-facebook-icon.png") $facebook-login no-repeat;
+        background-position: 0.5rem center;
+      }
+      .btn-google {
+        background: url("../img/btn-google-icon.png") $google-login no-repeat;
+        background-position: 0.5rem center;
+      }
+      hr {
+        padding: 0 15px;
+        border-bottom: 1px solid #f5f5f5;
+        text-align: center;
+      }
+      hr:after {
+        content: "Or";
+        color: #acacac;
+        display: inline-block;
+        position: relative;
+        top: -0.9rem;
+        font-size: 0.75rem;
+        padding: 0 11px;
+        background: $white;
+        line-height: 20px;
+      }
+      > div {
+        input[type='email'], input[type='password'] {
+          margin: 0 0 $global-margin/4;
+          font-size: 0.75rem;
           color: $text-gray;
           &.incorrect {
             border-color: $red;
@@ -498,20 +615,11 @@ height: 100%;
           color: $menu-gray;
         }
       }
-      .netflix-success-btn {
-        position: relative;
-        img {
-          height: 1.25rem;
-          position: absolute;
-          left: 0.75rem;
-          top: 1rem;
-        }
-        .success-btn {
-          background: linear-gradient(90deg, $gradient-from, $gradient-to) no-repeat;
-          padding: 0.625rem 0;
-          margin-top: 0.5rem;
-          border-radius: 0.5rem;
-        }
+      .success-btn {
+        background: linear-gradient(90deg, $gradient-from, $gradient-to) no-repeat;
+        padding: 0.625rem 0;
+        margin-top: $global-margin/4*3;
+        border-radius: 0.5rem;
       }
       .signup-link, .forgot-link {
         padding: 0;
@@ -519,218 +627,114 @@ height: 100%;
         a {
           font-size: 0.75rem;
           text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .billing-body {
+    /*background: $white-gray;*/
+    padding: 5.5rem 0;
+    > div:first-child {
+      padding: 5.75rem 0 5.125rem;
+      border-right: 2px solid $light-gray;
+    }
+    > div:nth-child(2) {
+      padding-top: 2rem;
+    }
+   .billing-form {
+      text-align: center;
+      background: $white;
+      /*left: 50%;*/
+      /*position: absolute;*/
+      /*margin: 7.2rem 0 0 -12.5% !important;*/
+      padding: 3.2rem;
+      border-radius: 0.5rem;
+      .form-title {
+        margin-bottom: 2.5rem;
+        color: $menu-gray;
+      }
+      .btn-facebook {
+        background: url("../img/btn-facebook-icon.png") $facebook-login no-repeat;
+        background-position: 0.5rem center;
+      }
+      .btn-google {
+        background: url("../img/btn-google-icon.png") $google-login no-repeat;
+        background-position: 0.5rem center;
+      }
+      hr {
+        padding: 0 15px;
+        border-bottom: 1px solid #f5f5f5;
+        text-align: center;
+      }
+      hr:after {
+        content: "Or";
+        color: #acacac;
+        display: inline-block;
+        position: relative;
+        top: -0.9rem;
+        font-size: 0.75rem;
+        padding: 0 11px;
+        background: $white;
+        line-height: 20px;
+      }
+      > div {
+        &.input-state {
+          padding: 0 0.125rem 0 0;
+        }
+        &.input-zip {
+          padding: 0 0 0 0.125rem;
+        }
+        &.input-adress-2 {
+          margin-bottom: 1rem;
+        }
+        input[type='text'], input[type='email'], input[type='password'] {
+          margin: 0 0 $global-margin/4;
+          font-size: 0.75rem;
+          color: $text-gray;
+          &.incorrect {
+            border-color: $red;
+            color: $red;
+          }
+        }
+      }
+      .incorrect-text {
+        color: $red;
+        font-size: 0.75rem;
+        margin-bottom: 1rem;
+      }
+      > div {
+        .checkbox-remember {
+          margin: 1rem auto 1.25rem;
+        }
+        .label-remember {
+          font-size: 0.75rem !important;
           color: $menu-gray;
         }
       }
-    }
-    .netflix-close {
-      position: absolute;
-      top: 0.75rem;
-      right: 1rem;
-    }
-  }
-}
-
-.forgot-body {
-  background: $white-gray;
-  height: 34.5rem;
-  .forgot-form {
-    text-align: center;
-    background: $white;
-    left: 50%;
-    position: absolute;
-    margin: 7.2rem 0 0 -12.5% !important;
-    padding: 8.25rem 3.2rem 12.5rem;
-    border-radius: 0.5rem;
-    .back-link {
-      position: absolute;
-      top: 2rem;
-      left: 2.5rem;
-      font-size: 0.75rem;
-    }
-    .form-title {
-      /*margin-bottom: 2.5rem;*/
-      color: $menu-gray;
-      font-size: 1.35rem;
-    }
-    .forgot-text {
-      padding: 1.375rem 0;
-      line-height: 1rem;
-      span {
+      .select-country {
         font-size: 0.75rem;
-        color: $menu-gray;
       }
-    }
-    .btn-facebook {
-      background: url("../img/btn-facebook-icon.png") $facebook-login no-repeat;
-      background-position: 0.5rem center;
-    }
-    .btn-google {
-      background: url("../img/btn-google-icon.png") $google-login no-repeat;
-      background-position: 0.5rem center;
-    }
-    hr {
-      padding: 0 15px;
-      border-bottom: 1px solid #f5f5f5;
-      text-align: center;
-    }
-    hr:after {
-      content: "Or";
-      color: #acacac;
-      display: inline-block;
-      position: relative;
-      top: -0.9rem;
-      font-size: 0.75rem;
-      padding: 0 11px;
-      background: $white;
-      line-height: 20px;
-    }
-    > div {
-      input[type='email'], input[type='password'] {
-        margin: 0 0 $global-margin/4;
-        font-size: 0.75rem;
-        color: $text-gray;
-        &.incorrect {
-          border-color: $red;
-          color: $red;
+      .success-btn {
+        background: linear-gradient(90deg, $gradient-from, $gradient-to) no-repeat;
+        padding: 0.625rem 0;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+      }
+      .signup-link, .forgot-link {
+        padding: 0;
+        margin-top: 0.5rem;
+        a {
+          font-size: 0.75rem;
+          text-decoration: underline;
         }
       }
     }
-    .incorrect-text {
-      color: $red;
-      font-size: 0.75rem;
-      margin-bottom: 1rem;
-    }
-    > div {
-      .checkbox-remember {
-        margin: 1rem auto 1.25rem;
-      }
-      .label-remember {
-        font-size: 0.75rem !important;
-        color: $menu-gray;
-      }
-    }
-    .success-btn {
-      background: linear-gradient(90deg, $gradient-from, $gradient-to) no-repeat;
-      padding: 0.625rem 0;
-      margin-top: $global-margin/4*3;
-      border-radius: 0.5rem;
-    }
-    .signup-link, .forgot-link {
-      padding: 0;
-      margin-top: 0.5rem;
-      a {
-        font-size: 0.75rem;
-        text-decoration: underline;
-      }
-    }
   }
-}
 
-.billing-body {
-  /*background: $white-gray;*/
-  padding: 5.5rem 0;
-  > div:first-child {
-    padding: 5.75rem 0 5.125rem;
-    border-right: 2px solid $light-gray;
+  .signup-bottom {
+    background: url("../img/bg-footer-login.jpg");
+    height: 0.5rem;
+    border-bottom: 1px solid #5c4955;
   }
-  > div:nth-child(2) {
-    padding-top: 2rem;
-  }
- .billing-form {
-    text-align: center;
-    background: $white;
-    /*left: 50%;*/
-    /*position: absolute;*/
-    /*margin: 7.2rem 0 0 -12.5% !important;*/
-    padding: 3.2rem;
-    border-radius: 0.5rem;
-    .form-title {
-      margin-bottom: 2.5rem;
-      color: $menu-gray;
-    }
-    .btn-facebook {
-      background: url("../img/btn-facebook-icon.png") $facebook-login no-repeat;
-      background-position: 0.5rem center;
-    }
-    .btn-google {
-      background: url("../img/btn-google-icon.png") $google-login no-repeat;
-      background-position: 0.5rem center;
-    }
-    hr {
-      padding: 0 15px;
-      border-bottom: 1px solid #f5f5f5;
-      text-align: center;
-    }
-    hr:after {
-      content: "Or";
-      color: #acacac;
-      display: inline-block;
-      position: relative;
-      top: -0.9rem;
-      font-size: 0.75rem;
-      padding: 0 11px;
-      background: $white;
-      line-height: 20px;
-    }
-    > div {
-      &.input-state {
-        padding: 0 0.125rem 0 0;
-      }
-      &.input-zip {
-        padding: 0 0 0 0.125rem;
-      }
-      &.input-adress-2 {
-        margin-bottom: 1rem;
-      }
-      input[type='text'], input[type='email'], input[type='password'] {
-        margin: 0 0 $global-margin/4;
-        font-size: 0.75rem;
-        color: $text-gray;
-        &.incorrect {
-          border-color: $red;
-          color: $red;
-        }
-      }
-    }
-    .incorrect-text {
-      color: $red;
-      font-size: 0.75rem;
-      margin-bottom: 1rem;
-    }
-    > div {
-      .checkbox-remember {
-        margin: 1rem auto 1.25rem;
-      }
-      .label-remember {
-        font-size: 0.75rem !important;
-        color: $menu-gray;
-      }
-    }
-    .select-country {
-      font-size: 0.75rem;
-    }
-    .success-btn {
-      background: linear-gradient(90deg, $gradient-from, $gradient-to) no-repeat;
-      padding: 0.625rem 0;
-      border-radius: 0.5rem;
-      margin-top: 1rem;
-    }
-    .signup-link, .forgot-link {
-      padding: 0;
-      margin-top: 0.5rem;
-      a {
-        font-size: 0.75rem;
-        text-decoration: underline;
-      }
-    }
-  }
-}
-
-.signup-bottom {
-  background: url("../img/bg-footer-login.jpg");
-  height: 0.5rem;
-  border-bottom: 1px solid #5c4955;
-}
-
 }
