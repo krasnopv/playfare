@@ -498,11 +498,20 @@ height: 100%;
           color: $menu-gray;
         }
       }
-      .success-btn {
-        background: linear-gradient(90deg, $gradient-from, $gradient-to) no-repeat;
-        padding: 0.625rem 0;
-        margin-top: 0.5rem;
-        border-radius: 0.5rem;
+      .netflix-success-btn {
+        position: relative;
+        img {
+          height: 1.25rem;
+          position: absolute;
+          left: 0.75rem;
+          top: 1rem;
+        }
+        .success-btn {
+          background: linear-gradient(90deg, $gradient-from, $gradient-to) no-repeat;
+          padding: 0.625rem 0;
+          margin-top: 0.5rem;
+          border-radius: 0.5rem;
+        }
       }
       .signup-link, .forgot-link {
         padding: 0;
