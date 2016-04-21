@@ -128,7 +128,7 @@
             a {
               line-height: 7rem;
               img {
-                padding: $global-margin $global-margin*2;
+                padding: $global-margin $global-margin*1.5;
                 margin-top: -0.1875rem;
               }
               &:hover {
@@ -244,6 +244,7 @@
   .login-body {
     background: $white-gray;
     height: 34.5rem;
+    margin-top: 54px;
     .login-form {
       text-align: center;
       background: $white;
@@ -303,6 +304,7 @@
         .label-remember {
           font-size: 0.75rem !important;
           color: $menu-gray;
+          margin-right: 0;
         }
       }
       .success-btn {
@@ -324,6 +326,7 @@
   .signup-body {
     /*background: $white-gray;*/
     padding: 5.5rem 0;
+    margin-top: 54px;
     > div:first-child {
       padding: 5.75rem 0 5.125rem;
       border-right: 2px solid $light-gray;
@@ -549,6 +552,7 @@
   .forgot-body {
     background: $white-gray;
     height: 34.5rem;
+    margin-top: 54px;
     .forgot-form {
       text-align: center;
       background: $white;
@@ -645,6 +649,7 @@
   .billing-body {
     /*background: $white-gray;*/
     padding: 5.5rem 0;
+    margin-top: 54px;
     > div:first-child {
       padding: 5.75rem 0 5.125rem;
       border-right: 2px solid $light-gray;
