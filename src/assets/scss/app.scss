@@ -4,6 +4,8 @@
 @import 'foundation';
 @import 'motion-ui';
 @import 'components/custom';
+@import 'components/billing-form';
+@import 'components/my-zone';
 
 @include foundation-global-styles;
 @include foundation-grid;

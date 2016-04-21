@@ -1,78 +1,94 @@
-<div id="main" class="row my-zone">
-  <div class="columns large-4">
-    <div class="profile-main">
-      <div class="row profile-head">
+<div id="main" class="row columns my-zone">
+  <div class="large-10 large-offset-1">
+  <div class="row">
+    <div class="columns large-4">
+      <div class="profile-main">
+        <div class="profile-head">
+          <div class="profile-photo">
+            <img src="assets/img/profile-photo.png"></img>
+          </div>
+        </div>
+        <div class="profile-name">
+          <h3>Zac Davids</h3>
+          <a href="my-zone.html">View Dashboard</a>
+        </div>
+        <div class="profile-credit">
+          <h4>Current credit</h4>
+          <span>$120.00</span>
+        </div>
+        <div class="profile-add-funds">
+          <a href="#" type="button" class="success-btn button large-12">Add Funds</a>
+        </div>
       </div>
-      <div class="row profile-name">
-      </div>
-      <div class="row profile-credit">
-      </div>
-      <div class="row profile-add-funds">
+      <div class="month-used">
+        <div class="month-title">
+          <h4>This month You used:</h4>
+        </div>
+        <div class="month-value">
+        </div>
+        <div class="month-edit-limit">
+          <a href="my-zone.html">Edit Play Limit</a>
+        </div>
       </div>
     </div>
-    <div class="month-used">
-      <div class="row month-title">
-      </div>
-      <div class="row month-value">
-      </div>
-      <div class="row month-edit-limit">
+    <div class="columns large-8">
+      <div class="my-zone-main">
+        <div class="row zone-title">
+          <div class="columns large-6">
+            <h5>
+              
+            </h5>
+          </div>
+          <div class="columns large-6 save-changes">
+            <button>
+              
+            </button>
+          </div>
+        </div>
+        <div class="row zone-personal">
+          <div class="columns large-3 personal-photo">
+            <img src="">
+              
+            </img>
+          </div>
+          <div class="columns large-6 personal-data">
+            <form>
+              
+            </form>
+          </div>
+        </div>
+        <div class="row zone-payment">
+          <div class="columns large-7 payment-methods">
+            <div>
+              
+            </div>
+          </div>
+          <div class="columns large-5 billing-adress">
+            <form class="row large-12 billing-form">
+              {{> billing_form}}
+            </form>
+          </div>
+        </div>
+        <div class="row zone-limit">
+          <form>
+            <div class="large-6 columns auto-stop">
+              
+            </div>
+            <div class="large-6 columns limit-value">
+              
+            </div>
+          </form>
+        </div>
+        <div class="row zone-buttons">
+          <div class="large-6 columns zone-delete">
+            
+          </div>
+          <div class="large-6 columns zone-save">
+            
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="columns large-8">
-    <div class="my-zone-main">
-      <div class="row zone-title">
-        <div class="columns large-6">
-          <h5>
-            
-          </h5>
-        </div>
-        <div class="columns large-6 save-changes">
-          <button>
-            
-          </button>
-        </div>
-      </div>
-      <div class="row zone-personal">
-        <div class="columns large-3 personal-photo">
-          <img src="">
-            
-          </img>
-        </div>
-        <div class="columns large-6 personal-data">
-          <form>
-            
-          </form>
-        </div>
-      </div>
-      <div class="row zone-payment">
-        <div class="columns large-7 payment-methods">
-          <div>
-            
-          </div>
-        </div>
-        <div class="columns large-5 billing-adress">
-          {{> billing_form}}
-        </div>
-      </div>
-      <div class="row zone-limit">
-        <form>
-          <div class="large-6 columns auto-stop">
-            
-          </div>
-          <div class="large-6 columns limit-value">
-            
-          </div>
-        </form>
-      </div>
-      <div class="row zone-buttons">
-        <div class="large-6 columns zone-delete">
-          
-        </div>
-        <div class="large-6 columns zone-save">
-          
-        </div>
-      </div>
-    </div>
   </div>
 </div>
