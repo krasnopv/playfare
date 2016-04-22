@@ -38,7 +38,7 @@
     </div>
     <div class="columns large-9">
       <div class="my-zone-main">
-        <div class="zone-title">
+        <div class="row columns zone-title">
           <div class="columns large-6">
             <h4>My account</h4>
           </div>
@@ -46,8 +46,8 @@
             <a href="#" type="button" class="success-btn button large-6">Save Changes</a>
           </div>
         </div>
-        <div class="zone-personal">
-          <div class="columns large-3">
+        <div class="row columns zone-personal">
+          <div class="columns large-2">
             <div class="row personal-photo">
               <img src="assets/img/profile-photo.png"></img>
             </div>
@@ -55,13 +55,24 @@
               <a href="#">Change Picture</a>
             </div>
           </div>
-          <div class="columns large-6 personal-data">
+          <div class="columns large-5 end personal-data">
             <form>
-              
+              <div class="large-6 columns input-firstname">
+                <input type="text" placeholder="First" value="Zac">
+              </div>
+              <div class="large-6 columns input-lastname">
+                <input type="text" placeholder="Last" value="Davids">
+              </div>
+              <div class="large-12 columns row">
+                <input type="email" placeholder="Email" value="zac.davids@gmail.com">
+              </div>
             </form>
+            <div class="row columns">
+              <a href="#">Change Password</a>
+            </div>
           </div>
         </div>
-        <div class="row zone-payment">
+        <div class="row columns zone-payment">
           <div class="columns large-7 payment-methods">
             <div>
               
@@ -79,7 +90,7 @@
             </form>
           </div>
         </div>
-        <div class="row zone-limit">
+        <div class="row columns zone-limit">
           <form>
             <div class="large-6 columns auto-stop">
               
@@ -89,7 +100,7 @@
             </div>
           </form>
         </div>
-        <div class="row zone-buttons">
+        <div class="row columns zone-buttons">
           <div class="large-6 columns zone-delete">
             
           </div>
