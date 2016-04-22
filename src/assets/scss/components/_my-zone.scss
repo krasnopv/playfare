@@ -74,7 +74,24 @@
 			}
 		}
 		.month-value {
+			margin-bottom: 1rem;
 			text-align: center;
+			h3 {
+				font-size: 1.5rem;
+				color: $text-pink;
+				margin-bottom: 0.25rem;
+			}
+			span {
+				font-size: 0.75rem;
+				color: $text-gray;
+			}
+			.progress {
+				border: 1px solid $text-pink;
+				margin-bottom: 0;
+				.progress-meter {
+					background: $gradient-red;
+				}
+			}
 		}
 		.month-edit-limit {
 			a {
