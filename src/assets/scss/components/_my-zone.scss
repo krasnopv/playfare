@@ -9,6 +9,8 @@
 			background-size: auto 100%;
 			height: 6rem;
 			position: relative;
+			border-top-left-radius: 0.5rem;
+			border-top-right-radius: 0.5rem;
 			.profile-photo {
 				height: 6.5625rem;
 				width: 6.5625rem;
@@ -55,7 +57,10 @@
 			background: $white;
 			border-bottom-left-radius: 0.5rem;
 			border-bottom-right-radius: 0.5rem;
-
+			a {
+					font-size: 0.65rem;
+					line-height: 0.85rem;				
+			}
 		}
 	}
 	.month-used {
@@ -100,12 +105,37 @@
 		}
 	}
 	.my-zone-main {
+		background: $white;
+		padding: 1.25rem 1.75rem 1.875rem 2.5rem;
+		border-radius: $global-radius*2;
 		.zone-title {
+			> div {
+				padding: 0;
+			}
+			h4 {
+				font-size: 0.75rem;
+				text-transform: uppercase;
+				color: $text-gray;
+				font-weight: bold;
+			}
 			.save-changes {
+				a {
+					float: right;
+					font-size: 0.65rem;
+					line-height: 0.85rem;
+				}
 			}
 		}
-		.zone-personal {
+		.zone-personal {			
 			.personal-photo {
+				height: 6.5625rem;
+				width: 6.5625rem;
+				border-radius: 6.5625rem;
+				overflow: hidden;
+				padding: 0;
+			}
+			a {
+				font-size: 0.75rem;
 			}
 			.personal-data {
 			}
