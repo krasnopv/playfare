@@ -1,5 +1,5 @@
 <!-- Header -->
-<header class="row expanded large-12 header sticky" data-sticky data-margin-top="0" style="z-index: 9999">
+<header class="row expanded large-12 header sticky" data-sticky data-margin-top="0" style="z-index: 999">
   <div class="top-bar row large-10">
     <div class="top-bar-title large-3">
       <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
@@ -21,10 +21,12 @@
       </div>
       <div class="top-bar-right large-6 columns">
         <ul class="menu">
-          <li><a href="login.html" class="hollow button small">Login</a><!--button class="hollow button small" href="login.html">Login</button--></li>
+          <li><a data-open="login-form-modal" class="hollow button small">Login</a><!--button class="hollow button small" href="login.html">Login</button--></li>
           <li><a href="signup.html" class="button small">Sign up</a><!--button type="button" class="button small" href="signup.html">Sign up</button--></li>
         </ul>
       </div>
     </div>
   </div>
+  {{> login_form}}
+  {{> forgot_form}}
 </header>
