@@ -190,10 +190,11 @@
 						font-size: 0.75rem;
 						display: flex;
 						&::after {
-							border-color: #333 transparent transparent;
 							top: 1rem;
 							right: 0.5rem;
 							position: absolute;
+							content: url(/assets/img/arrow-down.png);
+							border-top-style: none;
 						}
 						&:hover {
 							background: $white-gray;
