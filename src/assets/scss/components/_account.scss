@@ -191,7 +191,7 @@
 						display: flex;
 						&::after {
 							top: 1rem;
-							right: 0.5rem;
+							right: 1rem;
 							position: absolute;
 							content: url(/assets/img/arrow-down.png);
 							border-top-style: none;
@@ -206,7 +206,7 @@
 							float: left;
 						}
 						span {
-							line-height: 1.5rem;
+							line-height: 2rem;
 							.card-name {
 								float: left;
 							}
