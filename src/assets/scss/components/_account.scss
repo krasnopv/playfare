@@ -207,8 +207,9 @@
 						}
 						span {
 							line-height: 2rem;
-							.card-name {
+							&.card-name {
 								float: left;
+								color: $text-gray;
 							}
 							&.default {
 								display: flex;
