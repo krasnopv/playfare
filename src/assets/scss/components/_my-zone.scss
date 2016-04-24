@@ -1,5 +1,6 @@
 .my-zone {
 	padding: 3.75rem 0 5rem;
+	color: $text-gray;
 	.profile-main {
 		max-width: 16rem;
 		.profile-head {
@@ -88,7 +89,6 @@
 			}
 			span {
 				font-size: 0.75rem;
-				color: $text-gray;
 			}
 			.progress {
 				border: 1px solid $text-pink;
@@ -107,220 +107,225 @@
 	}
 	.my-zone-main {
 		background: $white;
-		padding: 1.25rem 1.75rem 1.875rem 2.5rem;
+		padding: 2.5rem 0 0;
 		border-radius: $global-radius*2;
-		.zone-title {
-			margin-bottom: 2rem;
-			> div {
-				padding: 0;
+		margin-bottom: 2rem;
+		table {
+			border-collapse: inherit;
+			text-align: left;
+			margin-bottom: 0;
+			tfoot {
+				background: transparent;
+				tr {
+					td {
+						color: $black;
+						text-transform: uppercase;
+						line-height: 2.5rem;
+						border-top: 2px solid $light-gray;
+					}
+				}					
 			}
-			h4 {
-				font-size: 0.75rem;
-				text-transform: uppercase;
-				color: $text-gray;
-				font-weight: bold;
-			}
-			.save-changes {
-				a {
-					float: right;
-					font-size: 0.65rem;
-					line-height: 0.85rem;
-				}
-			}
-		}
-		.zone-personal {
-			padding-bottom: 3.75rem;
-			border-bottom: 2px solid $white-gray;			
-			.personal-photo {
-				height: 6.5625rem;
-				width: 6.5625rem;
-				border-radius: 6.5625rem;
-				overflow: hidden;
-				padding: 0;
-			}
-			a {
-				font-size: 0.75rem;
-				text-decoration: underline;
-			}
-			.personal-data {
-				form {
-					margin-bottom: 0.5rem;
-					div {
-				        &.input-firstname {
-				          	padding: 0 0.125rem 0 0;
-				        }
-				        &.input-lastname {
-				          	padding: 0 0 0 0.125rem;
-				        }
-				        input[type='text'], input[type='email'] {
-					        margin: 0 0 $global-margin/4;
-					        font-size: 0.75rem;
-					        color: $text-gray;
-					        &.incorrect {
-					          	border-color: $red;
-					          	color: $red;
-					        }
-				        }
-				        a {
-							font-size: 0.75rem;
-							text-decoration: underline;
-						}
-				    }
-				}
-			}
-		}
-		.zone-payment {
-			padding-top: 2rem;
-			padding-bottom: 2rem;
-			border-bottom: 2px solid $white-gray;
-			.payment-methods {
-				h4 {
-					font-size: 0.75rem;
+			tr {
+			background: transparent;
+				th {
+					padding: 0.2rem 1rem 0.2rem 2.5rem;					
+					font-size: 0.6875rem;
+					font-weight: normal;
 					text-transform: uppercase;
-					color: $text-gray;
-					font-weight: bold;
+					color: $black;
+					line-height: 2.25rem;
+					border-top: 2px solid $light-gray;
+					border-bottom: 2px solid $light-gray;
 				}
-				.cards {
-					margin-top: 1rem;
-					.card {
-						background: transparent;
-						position: relative;
-						color: $text-gray;
-						font-size: 0.75rem;
-						display: flex;
-						&::after {
-							border-color: #333 transparent transparent;
-							top: 1rem;
-							right: 0.5rem;
-							position: absolute;
-						}
-						&:hover {
-							background: $white-gray;
-						}
-						&:focus {
-							background: $white-gray;							
-						}
-						img {
-							float: left;
-						}
-						span {
-							line-height: 1.5rem;
-							.card-name {
-								float: left;
-							}
-							&.default {
-								display: flex;
-								float: left;
-								color: map-get($foundation-palette, success);
-								font-weight: bold;
-								text-transform: uppercase;
-								&::before {
-									content: '✓'; 
-								}								
-							}
-							&.undefault {
-								display: none;
-							}
-						}			
-					}
-					.dropdown-pane {
-						width: 9.625rem;
-						left: + 200px;
-						padding: 0.5rem 0;
-						border: none;
-						box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
-						ul {
-							padding: 0;
-							margin: 0;
-							li {
-								list-style: none;
-								font-size: 0.75rem;
-								color: $text-gray;
-								padding-left: 1.5rem;
-								line-height: 1.5rem;
-								&:hover {
-									background: $gradient-red;
-									color: $white;
-									cursor: pointer;
-								}
-							}
-						}
-					}
+				> th:first-child {
+					width: 13%;
 				}
-				.add-payment {
-					a {
-						font-size: 0.75rem;
-						text-decoration: underline;
-					}
+				> th:nth-child(2) {
+					width: 30%;
+				}
+				> th:nth-child(3) {
+					width: 22%;
+				}
+				> th:nth-child(4) {
+					width: 14%;
+				}
+				> th:nth-child(5) {
+					width: 16%;
+				}
+				td {
+					font-size: 0.6875rem;
+					padding: 0.2rem 1rem 0.2rem 2.5rem;
+					color: $title-gray;
+					line-height: 2.5rem;
+				}
+				> td:first-child {
+					width: 14%;
+				}
+				> td:nth-child(2) {
+					width: 31%;
+				}
+				> td:nth-child(3) {
+					width: 23%;
+				}
+				> td:nth-child(4) {
+					width: 15%;
+				}
+				> td:nth-child(5) {
+					width: 15%;
 				}
 			}
-			.billing-adress {
-				.billing-form {
-					padding: 0 1.25rem;
-					.form-title {
-						margin-bottom: 1rem;
-						h5 {
-							font-size: 0.75rem;
-							color: $text-gray;
-							text-align: left;
-							text-transform: uppercase;
-							font-weight: bold;
-						}
+		}
+		h4 {
+			font-size: 1rem;
+			text-transform: uppercase;
+			font-weight: bold;
+			margin-bottom: 1rem;
+		}
+		.my-zone-top {
+			margin-bottom: 3.75rem;
+			padding: 0 2.5rem !important;
+			.this-month {
+				> div {
+					padding: 0;
+				}
+				span {
+					font-size: 0.75rem;
+					color: $menu-gray;
+				}
+				.graphic {
+					height: 11.125rem;
+					width: 11.125rem;
+					background: conic-gradient(#ed1e79 30%, #29abe2 0 43%, #93278f 0);
+					border-radius: 50%;
+
+				}
+			}
+			.usage {
+				border-left: 2px solid $light-gray;
+				padding-left: 4rem;
+				.current-cycle {
+					padding-bottom: 4rem;
+					.current-cycle-value {
+						font-size: 2.625rem;
+						line-height: 2.5rem;
+   						margin: 1.25rem 0 0rem;
 					}
-					.input-full-name {
-						input[type='text'] {
-							margin-bottom: 1rem;
+					.current-cycle-saved {
+						font-size: 1rem;
+						color: map-get($foundation-palette, success);
+						font-weight: bold;
+					}
+				}
+				.past-usage {
+					table {
+						tr{
+							td {
+								font-size: 1rem;
+								padding: 0.2rem 0;
+								color: $title-gray;
+							}
 						}
 					}
 				}
 			}
 		}
-		.zone-limit {
-			padding-top: 2rem;
-			padding-bottom: 2rem;
-			border-bottom: 2px solid $white-gray;
+		.watched {
 			h4 {
-				font-size: 0.75rem;
-				text-transform: uppercase;
-				color: $text-gray;
-				font-weight: bold;
+			padding-left: 2.5rem;
+			padding-right: 2.5rem;
 			}
-			.auto-stop {
-				label {
-					font-size: 0.75rem;
-					color: $text-gray;
-				}
-			}
-			.limit-value {
-				position: relative;
-				.input-overlay {
-					text-align: right;
-				    position: absolute;
-				    width: 90.73px;
-				    top: 0;
-				    background: transparent;
-				    border: none;
+			.table-watched {
+				.watched-scroll {
+					max-height: 17rem;
+					overflow-y: scroll;
 				}
 			}
 		}
-		.zone-buttons {
-			padding-top: 2rem;
-			padding-bottom: 2rem;
-			border-bottom: 2px solid $white-gray;
-			.zone-delete {
-				a {
-					font-size: 0.75rem;
-					text-decoration: underline;
-					color: $text-delete;
+	}
+	.my-zone-billing {
+		background: $white;
+		padding: 0 0 0.5rem;
+		border-radius: $global-radius*2;
+		.billing-history {
+			.table-billing {
+				max-height: 11rem;
+				overflow-y: scroll;
+				&::-webkit-scrollbar-track {
+				    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+				    border-radius: 10px;
 				}
 			}
-			.save-changes {
-				a {
-					float: right;
-					font-size: 0.65rem;
-					line-height: 0.85rem;
+				table {
+					border-collapse: inherit;
+					text-align: left;
+					margin-bottom: 0;
+					tfoot {
+						background: transparent;
+						tr {
+							td {
+								color: $black;
+								text-transform: uppercase;
+							}
+						}					
+					}
+					tr {
+					background: transparent;
+						th {
+							padding: 0.2rem 1rem 0.2rem 2.5rem;					
+							font-size: 0.6875rem;
+							font-weight: normal;
+							text-transform: uppercase;
+							color: $black;
+							line-height: 2.25rem;
+							border-top: 2px solid $light-gray;
+							border-bottom: 2px solid $light-gray;
+						}
+						> th:first-child {
+							width: 23%;
+						}
+						> th:nth-child(2) {
+							width: 28%;
+						}
+						> th:nth-child(3) {
+							width: 13%;
+						}
+						> th:nth-child(4) {
+							width: 14%;
+						}
+						> th:nth-child(5) {
+							width: 16%;
+						}
+						td {
+							font-size: 0.6875rem;
+							padding: 0.2rem 1rem 0.2rem 2.5rem;
+							color: $title-gray;
+							line-height: 2.5rem;
+						}
+						> td:first-child {
+							width: 25%;
+						}
+						> td:nth-child(2) {
+							width: 30%;
+						}
+						> td:nth-child(3) {
+							width: 15%;
+						}
+						> td:nth-child(4) {
+							width: 15%;
+						}
+						> td:nth-child(5) {
+							width: 15%;
+						}
+					}
 				}
-			}
+		}
+		h4 {
+			font-size: 1rem;
+			text-transform: uppercase;
+			font-weight: bold;
+			margin: 1rem 0;
+			padding-left: 2.5rem;
+			padding-right: 2.5rem;
 		}
 	}
 }

@@ -1,6 +1,6 @@
 .my-zone {
 	padding: 3.75rem 0 5rem;
-
+	color: $text-gray;
 	.profile-main {
 		max-width: 16rem;
 		.profile-head {
@@ -89,7 +89,6 @@
 			}
 			span {
 				font-size: 0.75rem;
-				color: $text-gray;
 			}
 			.progress {
 				border: 1px solid $text-pink;
@@ -106,7 +105,7 @@
 			}
 		}
 	}
-	.my-zone-main {
+	.zone-main {
 		background: $white;
 		padding: 1.25rem 1.75rem 1.875rem 2.5rem;
 		border-radius: $global-radius*2;
@@ -118,7 +117,6 @@
 			h4 {
 				font-size: 0.75rem;
 				text-transform: uppercase;
-				color: $text-gray;
 				font-weight: bold;
 			}
 			.save-changes {
@@ -156,7 +154,6 @@
 				        input[type='text'], input[type='email'] {
 					        margin: 0 0 $global-margin/4;
 					        font-size: 0.75rem;
-					        color: $text-gray;
 					        &.incorrect {
 					          	border-color: $red;
 					          	color: $red;
@@ -178,7 +175,6 @@
 				h4 {
 					font-size: 0.75rem;
 					text-transform: uppercase;
-					color: $text-gray;
 					font-weight: bold;
 				}
 				.cards {
@@ -186,7 +182,6 @@
 					.card {
 						background: transparent;
 						position: relative;
-						color: $text-gray;
 						font-size: 0.75rem;
 						display: flex;
 						&::after {
@@ -242,7 +237,6 @@
 							li {
 								list-style: none;
 								font-size: 0.75rem;
-								color: $text-gray;
 								padding-left: 1.5rem;
 								line-height: 1.5rem;
 								&:hover {
@@ -268,10 +262,10 @@
 						margin-bottom: 1rem;
 						h5 {
 							font-size: 0.75rem;
-							color: $text-gray;
 							text-align: left;
 							text-transform: uppercase;
 							font-weight: bold;
+							color: $text-gray;
 						}
 					}
 					.input-full-name {
@@ -289,13 +283,11 @@
 			h4 {
 				font-size: 0.75rem;
 				text-transform: uppercase;
-				color: $text-gray;
 				font-weight: bold;
 			}
 			.auto-stop {
 				label {
 					font-size: 0.75rem;
-					color: $text-gray;
 				}
 			}
 			.limit-value {
