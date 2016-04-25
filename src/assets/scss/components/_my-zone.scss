@@ -110,6 +110,32 @@
 		padding: 2.5rem 0 0;
 		border-radius: $global-radius*2;
 		margin-bottom: 2rem;
+		.sort-button {
+			background: transparent;
+			color: $black;
+			font-size: 0.6875rem;
+			position: relative;
+			padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+			span {
+				padding-left: 0;
+				text-transform: uppercase;
+				text-align: left;
+			}
+			&:hover {
+				background: $white-gray;				
+				&::after {
+					display: block;
+					top: 0.5rem;
+	    			right: 0.75rem;
+					position: absolute;
+					content: url(../img/arrow-down.png);
+					border-top-style: none;
+				}
+			}
+			&::after {
+				display: none;
+			}
+		}
 		table {
 			border-collapse: inherit;
 			text-align: left;
@@ -128,7 +154,7 @@
 			tr {
 			background: transparent;
 				th {
-					padding: 0.2rem 1rem 0.2rem 2.5rem;					
+					padding: 0.2rem 1rem 0.2rem 0;					
 					font-size: 0.6875rem;
 					font-weight: normal;
 					text-transform: uppercase;
@@ -138,19 +164,20 @@
 					border-bottom: 2px solid $light-gray;
 				}
 				> th:first-child {
-					width: 13%;
+					width: 18%;
+					padding-left: 2rem;
 				}
 				> th:nth-child(2) {
 					width: 30%;
 				}
 				> th:nth-child(3) {
-					width: 22%;
+					width: 23%;
 				}
 				> th:nth-child(4) {
 					width: 14%;
 				}
 				> th:nth-child(5) {
-					width: 16%;
+					width: 14%;
 				}
 				td {
 					font-size: 0.6875rem;
@@ -271,6 +298,32 @@
 		background: $white;
 		padding: 0 0 0.5rem;
 		border-radius: $global-radius*2;
+		.sort-button {
+			background: transparent;
+			color: $black;
+			font-size: 0.6875rem;
+			position: relative;
+			padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+			span {
+				padding-left: 0;
+				text-transform: uppercase;
+				text-align: left;
+			}
+			&:hover {
+				background: $white-gray;				
+				&::after {
+					display: block;
+					top: 0.5rem;
+	    			right: 0.75rem;
+					position: absolute;
+					content: url(../img/arrow-down.png);
+					border-top-style: none;
+				}
+			}
+			&::after {
+				display: none;
+			}
+		}
 		.billing-history {
 			.table-billing {
 				max-height: 11rem;
@@ -307,6 +360,7 @@
 						}
 						> th:first-child {
 							width: 23%;
+							padding-left: 2rem;
 						}
 						> th:nth-child(2) {
 							width: 28%;
