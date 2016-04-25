@@ -185,8 +185,12 @@
 			margin-bottom: 3.75rem;
 			padding: 0 2.5rem !important;
 			.this-month {
+				position: relative;
 				> div {
 					padding: 0;
+				}
+				h4 {
+					margin-bottom: 0;
 				}
 				span {
 					font-size: 0.75rem;
@@ -198,7 +202,27 @@
 					margin-top: 2rem;
 					background: conic-gradient(#ed1e79 30%, #29abe2 0 43%, #93278f 0);
 					border-radius: 50%;
-
+				}
+				.chart-key {
+					position: absolute;
+					color: $title-gray;
+					font-size: 1rem;
+					text-align: center;
+					&.netflix-key {
+						top: 30%;
+						left: 60%;
+					}
+					&.hbo-key {
+						top: 90%;
+						left: 60%;
+					}
+					&.hulu-key {
+						top: 60%;
+						left: 10%;
+					}
+					h4 {
+						margin-bottom: 0;
+					}
 				}
 			}
 			.usage {
