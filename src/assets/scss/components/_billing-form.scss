@@ -48,10 +48,14 @@
           margin: 0 0 $global-margin/4;
           font-size: 0.75rem;
           color: $text-gray;
+          border-color: #aeaeae;
           &.incorrect {
             border-color: $red;
             color: $red;
           }
+        }
+        select {
+          border-color: #aeaeae;
         }
       }
       .incorrect-text {

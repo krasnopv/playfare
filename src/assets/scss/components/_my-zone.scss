@@ -132,8 +132,14 @@
 					border-top-style: none;
 				}
 			}
+			&:active {
+				background: $white-gray;
+				font-weight: bold;							
+			}
 			&::after {
-				display: none;
+				span {
+					display: none;
+				}
 			}
 		}
 		table {
@@ -182,7 +188,7 @@
 				td {
 					font-size: 0.6875rem;
 					padding: 0.2rem 1rem 0.2rem 2.5rem;
-					color: $title-gray;
+					color: $black;
 					line-height: 2.5rem;
 				}
 				> td:first-child {
@@ -377,8 +383,11 @@
 						td {
 							font-size: 0.6875rem;
 							padding: 0.2rem 1rem 0.2rem 2.5rem;
-							color: $title-gray;
+							color: $black;
 							line-height: 2.5rem;
+							a {
+								text-decoration: underline !important;
+							}
 						}
 						> td:first-child {
 							width: 25%;
