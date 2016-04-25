@@ -287,9 +287,16 @@
 				font-weight: bold;
 				margin-bottom: 1rem;
 			}
+			.checkbox-autostop{
+				position: absolute;
+				top: 0.8rem;
+			}
 			.auto-stop {
+				line-height: 36px;
+				position: relative;
 				label {
 					font-size: 0.75rem;
+					margin-left: 2rem;
 				}
 			}
 			.limit-value {
