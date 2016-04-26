@@ -8,12 +8,18 @@ body::-webkit-scrollbar {
 }
 .wrapper {
   height: 100%;
+  width: 80rem;
+  max-width: 80rem;
+  min-width: 80rem;
   .header {
     background: rgba(255,255,255,0.9);
     left: 50%  !important;
     margin-left: -40rem !important;
     border-bottom: 1px solid $light-gray !important;
     z-index: 999;
+    max-width: 80rem;
+    min-width: 80rem;
+    width: 80rem;
     .menu {
       > li[role="menuitem"] {
         a {
@@ -105,6 +111,9 @@ body::-webkit-scrollbar {
   #main {
     background: url(../img/home-main-bg.png) no-repeat top center;
     margin-top: 55px;
+    width: 80rem;
+    max-width: 80rem;
+    min-width: 80rem;
     &.my-zone {
       background: $white-gray;
     }
