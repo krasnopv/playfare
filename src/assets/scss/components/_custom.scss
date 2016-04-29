@@ -342,6 +342,7 @@ body::-webkit-scrollbar {
   background-color: rgba(0,0,0,0.6);
   background-blend-mode: multiply;
   height: 100%;
+  min-height: 40rem;
     .netflix-body {
       position: absolute;
       top: 50%;
